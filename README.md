@@ -10,3 +10,9 @@ Plots
 -----
 
 ![Wideband output](images/wideband-grey.jpg)
+
+Output: -30 dBm ± 2 dBm from 200 MHz to 1.2 GHz
+
+![Low frequency output](images/low-grey.jpg)
+
+Output: -25 dBm to -29 dBm from 1 MHz to 100 MHz
