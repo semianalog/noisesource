@@ -2,6 +2,8 @@
 
 Noise source for filter/amplifier testing, 1 MHz to 1 GHz. CC0/Public domain.
 
+Consider rev 1 a work in progress; a second revision is needed before you can make this.
+
 [![3D render](renders/3d-small.png)](renders/3d.png)
 
 
@@ -20,6 +22,12 @@ Output: -25 dBm to -29 dBm from 1 MHz to 100 MHz
 You probably don't want this revision. It has a bug: it oscillates around 1.6 GHz. A ferrite bead in the signal path damped this to the point where it's just a slight hump in the output spectrum (as seen above). I'm saving the existing Rev 1 PCBs, which require this modification, for distribution among friends on IRC. Rev 2 will have footprints for a few types of matching/damping circuits I plan to try between the noise diode and the first amplifier.
 
 The PCB is designed to allow experimentation with different noise diodes. I built two variants. One shoves a lot of current through a [Panasonic DZ2410000L](http://www.semicon.panasonic.co.jp/ds4/DZ24100_E.pdf) 10V Zener diode, roughly along the lines of a Maxim application note presenting a similar circuit. Performance was quite poor. The second uses the emitter-base junction of an [MMBTH10](https://www.fairchildsemi.com/datasheets/MM/MMBTH10.pdf) RF transistor in reverse bias with a 1k source resistor, with much better performance. I recommend the latter.
+
+## Assembly
+
+Assembly is fairly obvious, just use the schematic as reference. For revision 2 I'll render a nice assembly diagram.
+
+Revision 1 requires the insertion of a ferrite bead between DZ1 and C3. You'll have to cut the trace on the PCB and solder it in. I don't have a part number for the one I used, so this will require a bit of experimentation.
 
 ## Parts
 
